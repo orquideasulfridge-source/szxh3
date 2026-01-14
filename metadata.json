@@ -1,0 +1,7 @@
+{
+  "name": "  数智小航5.0",
+  "description": "基于 Tripo AI 的航空设备数字化3D智能教学平台，专注于行星锥齿轮减速器拆解与组装，包含学生/教师双模式及AI辅助功能。",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

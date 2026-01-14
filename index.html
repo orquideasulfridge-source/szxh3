@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数智小航</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load Babel for browser-side JSX/TS transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #1e293b; overflow: hidden; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #f1f5f9; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+    
+    <!-- Polyfill for process.env -->
+    <script>
+      window.process = { env: { NODE_ENV: 'development' } };
+    </script>
+
+    <!-- Custom Logo Favicon (SVG Data URI) -->
+    <!-- Updated to match the new AppLogo component design: Blue C loop + White A Tower -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22grad%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22><stop offset=%220%25%22 stop-color=%22%230062BD%22/><stop offset=%22100%25%22 stop-color=%22%2322D3EE%22/></linearGradient></defs><path d=%22M70 20 C 35 20 10 40 10 65 C 10 90 35 100 60 98%22 stroke=%22url(%23grad)%22 stroke-width=%2210%22 stroke-linecap=%22round%22 fill=%22none%22 /><path d=%22M50 15 L 30 80 L 42 80 L 46 68 L 50 68 Z%22 fill=%22white%22 transform=%22translate(0,5)%22 /><path d=%22M50 15 L 70 80 L 58 80 L 54 68 L 50 68%22 stroke=%22white%22 stroke-width=%223%22 fill=%22none%22 stroke-dasharray=%223 2%22 transform=%22translate(0,5)%22 /><rect x=%2238%22 y=%2273%22 width=%2224%22 height=%225%22 fill=%22white%22 /></svg>">
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1?deps=react@18.2.0",
+    "recharts": "https://esm.sh/recharts@2.12.0?deps=react@18.2.0,react-dom@18.2.0",
+    "three": "https://esm.sh/three@0.150.1",
+    "three-stdlib": "https://esm.sh/three-stdlib@2.21.8?deps=three@0.150.1",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.57.0?deps=three@0.150.1,react@18.2.0,react-dom@18.2.0,@react-three/fiber@8.13.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.13.0?deps=three@0.150.1,react@18.2.0,react-dom@18.2.0",
+    "@react-spring/three": "https://esm.sh/@react-spring/three@9.7.2?deps=three@0.150.1,@react-three/fiber@8.13.0,react@18.2.0,react-dom@18.2.0",
+    "three/": "https://esm.sh/three@0.150.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Main Entry Point: Compiled by Babel in browser -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
+  </body>
+</html>
